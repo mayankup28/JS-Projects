@@ -1,6 +1,8 @@
 const star = document.querySelectorAll(".fa-star");
 const emojis=document.querySelectorAll(".far");
 const colors=["red","orange","lightblue","lightgreen","green"]
+const expression=["Angry","Nice","Cool","Happy","Super"]
+const exp=document.querySelector(".exp");
 
 
 upadate(0)
@@ -25,4 +27,6 @@ function upadate(index) {
         ele.style.transform=`translateX(-${index*50}px)`;
         ele.style.color=colors[index];
     })
+    exp.innerHTML=expression[index]
+    exp.style.color=colors[index]
 }
