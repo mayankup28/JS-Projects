@@ -1,7 +1,16 @@
+body{
+    background-color: black;
+}
+
+
+/* reset screen  */
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* making ul items flex  */
 ul{
     display: flex;
     list-style: none;
@@ -12,7 +21,6 @@ ul{
 li{
     margin: 0 90px;
     font-size: 1.5rem;
-    /* <i class="fa-solid fa-bars"></i> */
 }
 
 nav{
@@ -22,12 +30,17 @@ nav{
     height: 60px;
 }
 
+
+/* hiding navicon */
 .ham{
     margin-top: 5px;
     margin-right: 10px;
     font-size: 30px;
     display: none;
 }
+
+
+/* making navbar responsive for small screen size  */
 
 @media screen and (max-width:1050px){
     nav{
@@ -55,6 +68,7 @@ nav{
         left: 0;
     }
 
+    /* displaing nav icon  */
     .ham{
         display: initial;
     }

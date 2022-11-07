@@ -1,7 +1,9 @@
 let ham = document.querySelector('.ham');
 let tag = document.querySelector('.list')
 let swichbtn = true;
-let a=0;
+
+
+// a swich function 
 const flip = () => { swichbtn = !swichbtn }
 ham.addEventListener('click', () => {
     if (swichbtn) {
