@@ -1,7 +1,7 @@
 const star = document.querySelectorAll(".fa-star");
 const emojis=document.querySelectorAll(".far");
 const colors=["red","orange","lightblue","lightgreen","green"]
-const expression=["Angry","Nice","Cool","Happy","Super"]
+const expression=["Angry","Poor","Nice","Happy","Super"]
 const exp=document.querySelector(".exp");
 
 
