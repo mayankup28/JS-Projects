@@ -12,7 +12,7 @@
     <body>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Weather-App</a>
+                <a class="navbar-brand"  href="#">Weather-App</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -21,39 +21,39 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About-this-app</a>
+                            <!-- <a class="nav-link" href="#">About-this-app</a> -->
                         </li>
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                            </a>
-                            <ul class="dropdown-menu">
+                            </a> -->
+                            <!-- <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Delhi</a></li>
                                 <li><a class="dropdown-item" href="#">Pune</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="#">Banglore</a></li>
-                            </ul>
-                        </li>
+                            </ul> -->
+                        <!-- </li> -->
 
                         <li class="nav-item">
-                            <a class="nav-link">Usage-Guide</a>
+                            <!-- <a class="nav-link">Usage-Guide</a> -->
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
 
         <div class="container">
-            <h1 class="my-4 text-center">Wheather for Delhi</h1>
+            <h1 class="my-4 text-center">Wheather for <span id="cityName"></span></h1>
             <main>
                 <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                     <div class="col">
@@ -62,50 +62,50 @@
                                 <h4 class="my-0 fw-normal">Temperatures</h4>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$0<small
-                                        class="text-muted fw-light">/mo</small></h1>
+                                <!-- <h1 class="card-title pricing-card-title">$0<small -->
+                                        <!-- class="text-muted fw-light">/mo</small></h1> -->
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>Temperature is <span id="temp"></span></li>
                                     <li>Min Temperature is <span id="min_temp"></span></li>
                                     <li>Max Temperature is <span id="max_temp"></span></li>
                                 </ul>
-                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for
-                                    free</button>
+                                <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for
+                                    free</button> -->
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card mb-4 rounded-3 shadow-sm">
                             <div class="card-header py-3">
-                                <h4 class="my-0 fw-normal">Pro</h4>
+                                <h4 class="my-0 fw-normal">Humidity info</h4>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$15<small
-                                        class="text-muted fw-light">/mo</small></h1>
+                                <!-- <h1 class="card-title pricing-card-title">$15<small -->
+                                        <!-- class="text-muted fw-light">/mo</small></h1> -->
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>Cloud PCT is <span id="cloud_pct"></span></li>
                                     <li>Feels Like is <span id="feels_like"></span></li>
                                     <li>Humidity is <span id="humidity"></span></li>
                                 </ul>
-                                <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                                <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> -->
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card mb-4 rounded-3 shadow-sm border-primary">
                             <div class="card-header py-3 text-bg-primary border-primary">
-                                <h4 class="my-0 fw-normal">Enterprise</h4>
+                                <h4 class="my-0 fw-normal">Wind info</h4>
                             </div>
                             <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$29<small
-                                        class="text-muted fw-light">/mo</small></h1>
+                                <!-- <h1 class="card-title pricing-card-title">$29<small
+                                        class="text-muted fw-light">/mo</small></h1> -->
                                 <ul class="list-unstyled mt-3 mb-4">
                                     <li>Wind Degrees is <span id="wind_degrees"></span></li>
                                     <li>Wind Speed is <span id="wind_speed"></span></li>
                                     <li>Sunrise time is <span id="sunrise"></span></li>
                                     <li>Sunset time is <span id="sunset"></span></li>
                                 </ul>
-                                <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                                <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button> -->
                             </div>
                         </div>
                     </div>
@@ -118,14 +118,14 @@
                         <thead>
                             <tr>
                                 <th style="width: 34%;"></th>
-                                <th style="width: 34%;">Cloud_pct</th>
+                                <th style="width: 34%;">Temp</th>
                                 <th style="width: 34%;">Feels_like</th>
                                 <th style="width: 34%;">Humidity</th>
                                 <th style="width: 34%;">Max_temp</th>
                                 <th style="width: 34%;">Min_temp</th>
                                 <th style="width: 34%;">Sunrise</th>
                                 <th style="width: 34%;">Sunset</th>
-                                <th style="width: 34%;">Temp</th>
+                                <th style="width: 34%;">Cloud_pct</th>
                                 <th style="width: 34%;">Wind_degrees</th>
                                 <th style="width: 34%;">Wind_speed</th>
 
@@ -133,59 +133,59 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row" class="text-start">Shanghai</th>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
+                                <th scope="row" id="One" class="text-start"></th>
+                                <td><span id="temp1"></span></td>
+                                <td><span id="feels_like1"></span></td>
+                                <td><span id="humidity1"></span></td>
+                                <td><span id="max_temp1"></span></td>
+                                <td><span id="min_temp1"></span></td>
+                                <td><span id="sunrise1"></span></td>
+                                <td><span id="sunset1"></span></td>
+                                <td><span id="cloud_pct1"></span></td>
+                                <td><span id="wind_degrees1"></span></td>
+                                <td><span id="wind_speed1"></span></td>
                             </tr>
                             <tr>
-                                <th scope="row" class="text-start">Boston</th>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
+                                <th scope="row" id="Two" class="text-start"></th>
+                                <td><span id="temp2"></span></td>
+                                <td><span id="feels_like2"></span></td>
+                                <td><span id="humidity2"></span></td>
+                                <td><span id="max_temp2"></span></td>
+                                <td><span id="min_temp2"></span></td>
+                                <td><span id="sunrise2"></span></td>
+                                <td><span id="sunset2"></span></td>
+                                <td><span id="cloud_pct2"></span></td>
+                                <td><span id="wind_degrees2"></span></td>
+                                <td><span id="wind_speed2"></span></td>
                             </tr>
                         </tbody>
 
                         <tbody>
                             <tr>
-                                <th scope="row" class="text-start">Lacknow</th>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
+                                <th scope="row" id="Three" class="text-start"></th>
+                                <td><span id="temp3"></span></td>
+                                <td><span id="feels_like3"></span></td>
+                                <td><span id="humidity3"></span></td>
+                                <td><span id="max_temp3"></span></td>
+                                <td><span id="min_temp3"></span></td>
+                                <td><span id="sunrise3"></span></td>
+                                <td><span id="sunset3"></span></td>
+                                <td><span id="cloud_pct3"></span></td>
+                                <td><span id="wind_degrees3"></span></td>
+                                <td><span id="wind_speed3"></span></td>
                             </tr>
                             <tr>
-                                <th scope="row" class="text-start">Kolkata</th>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
+                                <th scope="row" id="Four" class="text-start"></th>
+                                <td><span id="temp4"></span></td>
+                                <td><span id="feels_like4"></span></td>
+                                <td><span id="humidity4"></span></td>
+                                <td><span id="max_temp4"></span></td>
+                                <td><span id="min_temp4"></span></td>
+                                <td><span id="sunrise4"></span></td>
+                                <td><span id="sunset4"></span></td>
+                                <td><span id="cloud_pct4"></span></td>
+                                <td><span id="wind_degrees4"></span></td>
+                                <td><span id="wind_speed4"></span></td>
                             </tr>
                         </tbody>
                     </table>
